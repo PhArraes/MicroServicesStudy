@@ -1,8 +1,10 @@
 document.addEventListener("DOMContentLoaded", function(event) {
     getIp(enviarDados);
 });
+var clientIp = '';
 
 function enviarDados(ip) {
+    clientIp = ip;
     var body = {
         IP: ip,
         URL: window.location.pathname,
