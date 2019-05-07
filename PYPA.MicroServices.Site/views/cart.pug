@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+  p Checkout #{title}
+
+  div
+    h2 Items
+  div
+    if items.length
+        each item in items
+          div
+            h4= item
+        button(type='button' onclick="window.location='/order';") Finalizar compra
+    unless items.length
+        div
+            h4 Não há itens no carrinho
+            button(type='button' onclick="window.location='/home';") Voltar

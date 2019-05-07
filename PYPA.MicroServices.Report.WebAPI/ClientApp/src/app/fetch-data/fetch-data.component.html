@@ -1,0 +1,25 @@
+<h1>Accesses</h1>
+
+
+<p *ngIf="!accesses"><em>Loading...</em></p>
+
+<table class='table table-striped' *ngIf="accesses">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>IP</th>
+            <th>URL</th>
+            <th>Params</th>
+            <th>Browser</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let access of accesses">
+            <td>{{ access._id }}</td>
+            <td>{{ access.ip }}</td>
+            <td>{{ access.url }}</td>
+            <td>{{ access.params }}</td>
+            <td>{{ access.browser }}</td>
+        </tr>
+    </tbody>
+</table>

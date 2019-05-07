@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PYPA.MicroServices.Monitor.WebAPI", "PYPA.MicroServices.Monitor.WebAPI\PYPA.MicroServices.Monitor.WebAPI.csproj", "{2E03E257-E806-4379-8F19-AA596B65D68B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PYPA.MicroServices.RabbitMQACL", "PYPA.MicroServices.RabbitMQACL\PYPA.MicroServices.RabbitMQACL.csproj", "{4D572D35-B9B8-430F-A7D8-C2212807F655}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "PYPA.MicroServices.Site", "PYPA.MicroServices.Site\PYPA.MicroServices.Site.njsproj", "{016A8B6C-5E0C-428A-BF28-E37C63AB5AB7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PYPA.MicroServices.Infra", "PYPA.MicroServices.Infra\PYPA.MicroServices.Infra.csproj", "{1E2C6CF3-7570-46CC-B4D3-76F5FADC577E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PYPA.MicroServices.Infra.Application", "PYPA.MicroServices.Infra.Application\PYPA.MicroServices.Infra.Application.csproj", "{AF78F427-0DB3-48A1-B067-1EBA1853114E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PYPA.MicroServices.Core", "PYPA.MicroServices.Core\PYPA.MicroServices.Core.csproj", "{5EA832BA-52B2-44A7-9CFC-0EBD1E0E6DAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PYPA.MicroServices.Report.WebAPI", "PYPA.MicroServices.Report.WebAPI\PYPA.MicroServices.Report.WebAPI.csproj", "{C70BBC2E-EBAE-467F-9C18-943EA3C2C2F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E03E257-E806-4379-8F19-AA596B65D68B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E03E257-E806-4379-8F19-AA596B65D68B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E03E257-E806-4379-8F19-AA596B65D68B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E03E257-E806-4379-8F19-AA596B65D68B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D572D35-B9B8-430F-A7D8-C2212807F655}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D572D35-B9B8-430F-A7D8-C2212807F655}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D572D35-B9B8-430F-A7D8-C2212807F655}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D572D35-B9B8-430F-A7D8-C2212807F655}.Release|Any CPU.Build.0 = Release|Any CPU
+		{016A8B6C-5E0C-428A-BF28-E37C63AB5AB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{016A8B6C-5E0C-428A-BF28-E37C63AB5AB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{016A8B6C-5E0C-428A-BF28-E37C63AB5AB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{016A8B6C-5E0C-428A-BF28-E37C63AB5AB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E2C6CF3-7570-46CC-B4D3-76F5FADC577E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E2C6CF3-7570-46CC-B4D3-76F5FADC577E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E2C6CF3-7570-46CC-B4D3-76F5FADC577E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E2C6CF3-7570-46CC-B4D3-76F5FADC577E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF78F427-0DB3-48A1-B067-1EBA1853114E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF78F427-0DB3-48A1-B067-1EBA1853114E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF78F427-0DB3-48A1-B067-1EBA1853114E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF78F427-0DB3-48A1-B067-1EBA1853114E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EA832BA-52B2-44A7-9CFC-0EBD1E0E6DAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EA832BA-52B2-44A7-9CFC-0EBD1E0E6DAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EA832BA-52B2-44A7-9CFC-0EBD1E0E6DAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EA832BA-52B2-44A7-9CFC-0EBD1E0E6DAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C70BBC2E-EBAE-467F-9C18-943EA3C2C2F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C70BBC2E-EBAE-467F-9C18-943EA3C2C2F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C70BBC2E-EBAE-467F-9C18-943EA3C2C2F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C70BBC2E-EBAE-467F-9C18-943EA3C2C2F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D59A46C9-06B1-4B1F-9713-C9638277A447}
+	EndGlobalSection
+EndGlobal
