@@ -5,6 +5,6 @@ namespace PYPA.MicroServices.Infra
 {
     public interface IAccessDAO
     {
-        List<AccessModel> List(int take, int skip);
+        List<AccessModel> List(string ip, string url,int take, int skip);
     }
 }

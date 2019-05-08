@@ -17,10 +17,10 @@ namespace PYPA.MicroServices.Report.WebAPI.Controllers
             this.accessDAO = accessDAO;
         }
 
-        [HttpGet("{take}/{skip}")]
-        public IEnumerable<AccessModel> WeatherForecasts(int take = 10, int skip = 0)
+        [HttpGet]
+        public IEnumerable<AccessModel> List(string ip, string path, int take = 10, int skip = 0)
         {
-            return accessDAO.List(take, skip);
+            return accessDAO.List(ip, path,  take, skip);
         }
 
         

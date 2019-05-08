@@ -10,7 +10,7 @@ export class AccessService {
   serviceUrl = `${this.baseUrl}api/accesses`;
   constructor(private http: HttpClient, @Inject('BASE_URL') private baseUrl: string) { }
 
-  list(take: number, skip: number): Observable<IAccess[]> {
-    return this.http.get<IAccess[]>(`${this.serviceUrl}/${take}/${skip}`);
+  list(ip: string, path: string, take: number, skip: number): Observable<IAccess[]> {    
+    return this.http.get<IAccess[]>(`${this.serviceUrl}?ip=${ip}&path=${path}&take=${take}&skip=${skip}`);
   }
 }

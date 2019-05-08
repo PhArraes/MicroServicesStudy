@@ -24,5 +24,18 @@ namespace PYPA.MicroServices.Infra
 
             return queryResult.Rows;
         }
+
+
+        public List<T> ExecuteNamed(string queryStr, List<KeyValuePair<string, object>> @params)
+        {
+            var query = new QueryRequest()
+               .Statement(@queryStr);
+
+            @params.ForEach(p => query.AddNamedParameter(p.Key, p.Value));
+
+            var queryResult = bucket.Query<T>(query);
+
+            return queryResult.Rows;
+        }
     }
 }

@@ -13,16 +13,32 @@ namespace PYPA.MicroServices.Infra
         {
         }
 
-        public List<AccessModel> List(int take, int skip)
+        public List<AccessModel> List(string ip, string path, int take, int skip)
         {
-            string query = @"SELECT _id, ip, url, params, browser, date
+            List<KeyValuePair<String, object>> @params = new List<KeyValuePair<string, object>>();
+            @params.Add(new KeyValuePair<string, object>("take", take));
+            @params.Add(new KeyValuePair<string, object>("skip", skip));
+            var where = "where true ";
+
+            if (!string.IsNullOrEmpty(ip))
+            {
+                where += " AND ip like $ip ";
+                @params.Add(new KeyValuePair<string, object>("ip", ip + '%'));
+            }
+            if (!string.IsNullOrEmpty(path))
+            {
+                where += "AND url like $path ";
+                @params.Add(new KeyValuePair<string, object>("path", $"{path}%"));
+            }
+
+            string query = $@"SELECT _id, ip, url, params, browser, date
                              FROM monitor_test
-                             ORDER BY date
-                             LIMIT $1
-                             OFFSET $2";
+                             {where}
+                             ORDER BY date DESC
+                             LIMIT $take
+                             OFFSET $skip";
 
-            return Execute(query, take, skip);
-
+            return ExecuteNamed(query, @params);
         }
     }
 }
