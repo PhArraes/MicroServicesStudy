@@ -3,11 +3,15 @@
 
 <p *ngIf="!accesses"><em>Loading...</em></p>
 <div class="column">
-  <div class="col-12-lg">
-    <input [(ngModel)]="ip" (change)="change()" />
-  </div>
-  <div class="col-12-lg">
-    <input [(ngModel)]="path" (change)="change()" />
+  <div class="row">
+    <div class="form-group col-sm col-lg">
+      <label for="ip">IP</label>
+      <input [(ngModel)]="ip" (keyup)="change()" placeholder="IP" class="form-control" />
+    </div>
+    <div class="form-group col-sm col-lg">
+      <label for="Path">Path</label>
+      <input [(ngModel)]="path" (keyup)="change()" placeholder="Path" class="form-control" />
+    </div>
   </div>
   <table class='table table-striped' *ngIf="accesses">
     <thead>
